@@ -4,6 +4,7 @@ function createRecipe(){
   let recipe = {
     name: document.getElementById('name').value,
     description: document.getElementById('description').value,
+    ingredients: document.getElementsByName('ingredients').value
   }
   let template = Handlebars.complile(document.getElementById('recipe-template').innerHTML);
 
@@ -30,6 +31,24 @@ function init() {
   Handlebars.registerHelper('displayIngredient', function(){
     Handlebars.SafeString(this.ingredients)
   })
+
+Handlebars.registerPartial('namePartial', document.getElementById("partial-template").innerHTML)
+function renderMain() {
+  let template = Handlebars.compile(document.getElementById("main-template").innerHTML);
+  let html = template({name: 'Gordon Ramsay'});
+}
+
+function createRecipe(){
+
+}
+function init() {
+  Handlebars.registerPartial('namePartial', document.getElementById("partial-template").innerHTML)
+  function renderMain() {
+    let template = Handlebars.compile(document.getElementById("main-template").innerHTML);
+    let html = template({name: 'Gordon Ramsay'});
+  }
+
+
 }
 
 
@@ -49,4 +68,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
 //
 // let template = Handlebars.compile(document.getElementById("my-template").innerHTML);
 // let html = template(recipe);
-// }
+//
