@@ -13,7 +13,7 @@ function createRecipe(){
     description: document.getElementById('description').value,
     ingredients: ingArray
   }
-  
+
   let template = Handlebars.compile(document.getElementById('recipe-template').innerHTML);
 
   let result = template(recipe);

@@ -24,17 +24,17 @@
       <div>{{ name }}</div>
     </script> -->
 
-      <form id="recipe-form" onsubmit="createRecipe();return false;">
-        Name: <input type="text" id="name"><br>
-        Description: <input type="textarea" id="description"><br>
-        ingredients: <input type="text" name="ingredients"><br>
-        ingredients: <input type="text" name="ingredients"><br>
-        ingredients: <input type="text" name="ingredients"><br>
-        ingredients: <input type="text" name="ingredients"><br>
-        ingredients: <input type="text" name="ingredients"><br>
-        <input type="submit">
+    <form id="recipe-form" onsubmit="createRecipe();return false;">
+      Name: <input type="text" id="name"><br>
+      Description: <input type="textarea" id="description"><br>
+      ingredients: <input type="text" name="ingredients"><br>
+      ingredients: <input type="text" name="ingredients"><br>
+      ingredients: <input type="text" name="ingredients"><br>
+      ingredients: <input type="text" name="ingredients"><br>
+      ingredients: <input type="text" name="ingredients"><br>
+      <input type="submit">
+    </form>
 
-      </form>
     <script id="recipe-form-template" type="text/x-handlebars-template">
       {{>recipeFormPartial}}
     </script>
