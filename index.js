@@ -4,7 +4,7 @@ function createRecipe(){
   let ing = document.getElementsByName('ingredients');
 
   let ingArray = []
-  for(let i=0, i < ing.length, i++){
+  for(let i=0; i < ing.length; i++){
     ingArray.push(ing[i].value)
   }
   let recipe = {
