@@ -14,13 +14,13 @@ function createRecipe(){
     ingredients: ingArray
   }
   
-  let template = Handlebars.complile(document.getElementById('recipe-template').innerHTML);
+  let template = Handlebars.compile(document.getElementById('recipe-template').innerHTML);
 
   let result = template(recipe);
 }
 
 function displayEditForm(){
-  Handlebars.complile(document.getElementById('recipe-form-template').innerHTML)
+  Handlebars.compile(document.getElementById('recipe-form-template').innerHTML)
 }
 
 function updateRecipe(){
