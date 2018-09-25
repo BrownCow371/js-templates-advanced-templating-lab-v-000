@@ -7,6 +7,7 @@ function createRecipe(){
   for(let i=0; i < ing.length; i++){
     ingArray.push(ing[i].value)
   }
+
   let recipe = {
     name: document.getElementById('name').value,
     description: document.getElementById('description').value,
