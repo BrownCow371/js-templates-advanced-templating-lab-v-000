@@ -1,10 +1,16 @@
 
 
 function createRecipe(){
+  let ing = document.getElementsByName('ingredients');
+
+  let ingArray = []
+  for(let i=0, i<ing.length, i++){
+    ingArray << ing[i].value
+  }
   let recipe = {
     name: document.getElementById('name').value,
     description: document.getElementById('description').value,
-    ingredients: document.getElementsByName('ingredients').value
+    ingredients: ingArray
   }
   let template = Handlebars.complile(document.getElementById('recipe-template').innerHTML);
 
