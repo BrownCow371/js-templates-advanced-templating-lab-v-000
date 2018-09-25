@@ -4,6 +4,7 @@ function createRecipe(){
   let recipe = {
     name: document.getElementById('name').value,
     description: document.getElementById('description').value,
+    ingredients: document.getElementsByName('ingredients').value
   }
   let template = Handlebars.complile(document.getElementById('recipe-template').innerHTML);
 
