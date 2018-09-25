@@ -38,9 +38,10 @@
     <script id="recipe-form-template" type="text/x-handlebars-template">
       {{>recipeFormPartial}}
     </script>
+
     <script id="recipe-template" type="text/x-handlebars-template">
       <h1>{{name}}</h1>
-      {{>recipeDetailsPartial}}
+      <div> {{>recipeDetailsPartial}} </div>
       <a href="displayEditForm()">Edit Recipe</a>
     </script>
 
